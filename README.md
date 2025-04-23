@@ -43,7 +43,7 @@ A secure, modern, and user-friendly online voting system built with Next.js 14, 
 ### Prerequisites
 
 - Node.js 18+ and npm
-- MongoDB (local or Atlas)
+- MongoDB Atlas account (for cloud database)
 - Webcam access for photo capture
 
 ### Installation
@@ -61,11 +61,18 @@ npm install
 
 3. Create a `.env` file in the root directory:
 ```env
-MONGODB_URI=mongodb://localhost:27017/voting-portal
+MONGODB_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=admin123
 ```
+
+> Note: To get your MongoDB Atlas connection string:
+> 1. Log in to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+> 2. Create a new cluster or use an existing one
+> 3. Click "Connect" on your cluster
+> 4. Choose "Connect your application"
+> 5. Copy the connection string and replace `your_mongodb_atlas_connection_string` in the .env file
 
 4. Start the development server:
 ```bash
