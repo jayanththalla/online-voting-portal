@@ -9,7 +9,6 @@ import { Label } from '@/components/ui/label'
 import { motion } from 'framer-motion'
 import { useToast } from '@/hooks/use-toast'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
 import { RefreshCw } from 'lucide-react'
 
 interface Candidate {
@@ -32,7 +31,6 @@ interface Voter {
 }
 
 export default function AdminPage() {
-  const router = useRouter()
   const { toast } = useToast()
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [candidates, setCandidates] = useState<Candidate[]>([])

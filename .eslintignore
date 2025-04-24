@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Next.js
+.next/
+out/
+build
+dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Specific files with many ESLint warnings
+src/app/(admin)/admin/page.tsx
+src/app/(auth)/register/page.tsx
+src/app/(dashboard)/vote/page.tsx
+src/app/api/admin/candidates/route.ts
+src/app/api/admin/data/route.ts
+src/app/api/admin/voters/route.ts
+src/app/api/seed/route.ts
+src/app/api/setup/route.ts
+src/app/footer.tsx
+src/app/page.tsx
+src/hooks/use-toast.ts
+src/lib/mongodb.ts
+src/utils/auth.ts 
