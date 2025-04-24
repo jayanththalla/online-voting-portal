@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
   env: {
     JWT_SECRET: process.env.JWT_SECRET || 'your-secret-key',
   },
+  // Disable error page generation during build
+  output: 'standalone',
+  // Skip error page generation
+  skipTrailingSlashRedirect: true,
+  skipMiddlewareUrlNormalize: true,
 };
 
 export default nextConfig;
