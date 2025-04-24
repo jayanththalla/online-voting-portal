@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
   staticPageGenerationTimeout: 0,
   // Disable strict mode to avoid CSR bailout issues
   reactStrictMode: false,
+  // Add environment variables for build
+  env: {
+    JWT_SECRET: process.env.JWT_SECRET || 'your-secret-key',
+  },
 };
 
 export default nextConfig;
